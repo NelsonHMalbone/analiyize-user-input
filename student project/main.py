@@ -6,6 +6,9 @@
 print("Enter a block of text for analysis:")
 prompt = input()
 
+# calculate number of chars
+total_chars = len(prompt)
+
 
 
 
@@ -15,6 +18,7 @@ print('Text Analysis Results:')
 #print("----------------------")
 # or
 print('-' * 22)
+print(f'Total Characters: {total_chars}')
 
 # result will be a print statement
 """
