@@ -9,7 +9,8 @@ prompt = input()
 # calculate number of chars
 total_chars = len(prompt)
 
-
+# calculate number of words
+total_words = len(prompt.split())
 
 
 
@@ -19,6 +20,7 @@ print('Text Analysis Results:')
 # or
 print('-' * 22)
 print(f'Total Characters: {total_chars}')
+print(f'Total Words: {total_words}')
 
 # result will be a print statement
 """
