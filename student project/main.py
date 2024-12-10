@@ -60,6 +60,12 @@ lengths = [len(word) for word in word_list]
 average_word_length = sum(lengths) / len(lengths) # how you found average
 # print(average_word_length) just to test and show on console
 
+# average sentence length
+average_sentence_length = total_words / total_sentence
+# print(average_sentence_length) just to test and show on console
+
+
+
 # results
 print('Text Analysis Results:')
 #print("----------------------")
@@ -70,6 +76,7 @@ print(f'Total Words: {total_words}')
 print(f'Total Sentences: {total_sentence}')
 print(f'Most Frequent word: "{most_used}" (used {word_frequecy[most_used]} times)')
 print(f'Average Word Length: {average_word_length} characters')
+print(f'Average Sentence Length: {average_sentence_length} words')
 
 
 
