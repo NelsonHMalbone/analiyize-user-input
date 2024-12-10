@@ -3,7 +3,7 @@
 # input the numbers
 print('Enter a series of numbers separated by spaces')
 prompt = input() # is a string
-lengthOfNumbers = len(prompt.split())
+#lengthOfNumbers = len(prompt.split())
 
 # coverting input to a intergers
 number_list = [int(num) for num in prompt.split()]
@@ -13,8 +13,8 @@ number_list = [int(num) for num in prompt.split()]
 # Results
 print("Number Analysis Results")
 print('-'*22)
-print(f"Total Numbers: {lengthOfNumbers}")
-print(f"Sum of Numbers: {sumTotal}")
+print(f"Total Numbers: {len(number_list)}")
+#print(f"Sum of Numbers: {}")
 
 """
 results 
