@@ -10,14 +10,31 @@ prompt = input() # is a string
 # coverting input to a intergers
 number_list = [int(num) for num in prompt.split()]
 
+# adding to a list to group
+nums_frequency = {}
+for nums in nums_frequency:
+    if nums not in nums_frequency:
+        nums_frequency[nums] = 1
+    else:
+        nums_frequency[nums] += 1
+
+
+
+# calculations
+number_totals = len(number_list)
+number_sum = sum(number_list)
+most_frequent_number = max(nums_frequency, key=nums_frequency.get)
+
+
+
 
 
 # Results
 print("Number Analysis Results")
 print('-'*22)
-print(f"The total number of entries: {len(number_list)}")
-print(f"The sum of the numbers: {sum(number_list)}")
-#print(f'The range of the numbers: {}')
+print(f"The total number of entries: {number_totals}")
+print(f"The sum of the numbers: {number_sum}")
+print(f'The max amount of numbers: {most_frequent_number}')
 #print(f'The most frequent number: {}')
 #print(f'The average of the numbers: {}')
 
