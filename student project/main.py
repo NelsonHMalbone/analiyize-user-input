@@ -26,7 +26,8 @@ for number in number_list:
 number_totals = len(number_list)
 number_sum = sum(number_list)
 most_frequent_number = max(nums_frequency, key=nums_frequency.get)
-
+number_average = round(number_sum/number_totals, 2)
+number_range = max(number_list) - min(number_list)
 
 
 
@@ -36,9 +37,9 @@ print("Number Analysis Results")
 print('-'*22)
 print(f"The total number of entries: {number_totals}")
 print(f"The sum of the numbers: {number_sum}")
-print(f'The max amount of numbers: {most_frequent_number}')
-#print(f'The most frequent number: {}')
-#print(f'The average of the numbers: {}')
+print(f'The max amount of numbers: {most_frequent_number},(appears {nums_frequency[most_frequent_number]} times)')
+print(f"Average Number: {number_average}")
+print(f'Range of Numbers: {number_range}')
 
 """
 results 
